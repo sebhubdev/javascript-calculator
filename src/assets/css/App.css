@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'gilroy';
+  src: url('../fonts/Gilroy-Light.otf');
+}
+
+*
+{
+  font-family: 'gilroy';
+  user-select: none;
+  box-sizing: border-box;
+}
+
+:root
+{
+  --color-1:#324357;
+  --color-2:#cdd4db;
+  --color-3:#614e3c;
+}
+
+body 
+{
+  margin:0;
+  background-color: var(--color-1);
+}
+
+.App 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    height:100vh;
+    flex-direction: column;
+}
+#credits
+{
+   font-size: 14px;
+   color:rgba(255,255,255,0.6);
+   margin: 10px 0 0 0;
+}
+#header 
+{
+    position: absolute;
+    top:20px;
+    width:100%;
+    text-align: center;
+}
+
+#header h1
+{
+    margin: 0;
+    padding: 0;
+    color:rgba(255,255,255,0.6);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#header span
+{
+    margin: 0;
+    padding: 0;
+    color:rgba(255,255,255,0.6);
+    font-size: 14px;
+    padding: 8px;
+}
+
+.social 
+{
+    display: flex; justify-content: center; text-align: center; left:0; position: absolute; width:100%; bottom:2vw;
+}
+.social a 
+{
+    display: flex; color:rgba(255,255,255,0.6); text-decoration: none;  transition: color 0.5s ease;
+    cursor: pointer;
+}
+
+.social span 
+{
+    display: flex; margin: 0 2vw;
+}
+.social span p
+{
+    font-size: 14px;
+}
+.social span svg {width:2vw; margin-right: 1vw;;}
+.social span svg path {fill:rgba(255,255,255,0.6); transition: fill 0.5s ease; }
+.social span a:hover > svg path {fill:orange;}
+.social span a:hover {color:orange;}
